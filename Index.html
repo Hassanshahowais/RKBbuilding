@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RKB Building</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('ar')">العربية</button>
+  </div>
+
+  <!-- Header with Logo -->
+  <header>
+    <img src="images/logo.png" alt="RKB Building Logo" class="logo">
+    <h1 id="title">RKB Building</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#apartments" id="nav-apartments">Apartments</a></li>
+      <li><a href="#shops" id="nav-shops">Shops</a></li>
+      <li><a href="#contact" id="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Apartments Section -->
+  <section id="apartments">
+    <h2 id="apartments-title">Apartments</h2>
+    <div class="floor-buttons">
+      <button onclick="showFloor(1)">Floor 1</button>
+      <button onclick="showFloor(2)">Floor 2</button>
+      <button onclick="showFloor(3)">Floor 3</button>
+      <button onclick="showFloor(4)">Floor 4</button>
+      <button onclick="showFloor(5)">Floor 5</button>
+      <button onclick="showFloor(6)">Floor 6</button>
+    </div>
+    <div class="apartments-grid" id="apartments-grid">
+      <!-- Apartments will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <!-- Shops Section -->
+  <section id="shops">
+    <h2 id="shops-title">Shops</h2>
+    <div class="shops-grid">
+      <!-- Shops will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 id="contact-title">Contact</h2>
+    <p id="contact-text">For inquiries, please call: +971 123 456 789</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
